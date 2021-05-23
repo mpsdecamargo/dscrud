@@ -57,7 +57,7 @@ public class ClientService {
 			return new ClientDTO(entity);
 		}
 		catch (EntityNotFoundException e) {
-			throw new EntityNotFoundException("Id not found" + id);
+			throw new ResourceNotFoundException("Id not found" + id);
 		}
 		
 	}
